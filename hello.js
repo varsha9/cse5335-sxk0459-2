@@ -5,7 +5,7 @@ var client = new pg.Client(connectionString);
 client.connect();
 
 //var query = client.query('CREATE TABLE items(id SERIAL PRIMARY KEY, text VARCHAR(40) not null, complete BOOLEAN)');
-client.query("INSERT INTO items(text, complete) values($1, $1)", [data.text, data.complete]);
+ var query = client.query("INSERT INTO items(text, complete) values($1, $1)", [data.text, data.complete]);
 
 query.on('row', function(row) {
     results.push(row);
