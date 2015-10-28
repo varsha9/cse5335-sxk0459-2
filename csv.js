@@ -13,7 +13,7 @@ var options = {
 }
 
 var csvStream = csv.createStream(options);
-fs.createReadStream('./CPH-T.csv').pipe(csvStream)
+fs.createReadStream('/Users/CaptainVarsha/cse5335-sxk0459-2/CPH-T.csv').pipe(csvStream)
     .on('error',function(err){
         console.error(err);
     })
