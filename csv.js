@@ -10,9 +10,10 @@ fs.readFile('./Customercomp.csv', 'utf8', function (err,data) {
     }
 
     var arr = data.split("\n");
+    console.log([arr]);
     for(var i = 0; i < arr.length; i++){
         var arr1 = arr[i].split(",")
-        console.log(arr1[1]);
+     //   console.log(arr1[1]);
      //   var query = client.query("INSERT INTO complaint (date, issue, company, state, zip, cid) values($1, $2, $3, $4, $5, $6)", [i,arr1[1],arr1[2],arr1[3],arr1[4],arr1[5],arr1[6]]);
     }
 });
