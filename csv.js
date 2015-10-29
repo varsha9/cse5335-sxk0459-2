@@ -10,7 +10,7 @@ fs.readFile('./Customercomp.csv', 'utf8', function (err,data) {
     }
 
     var arr = data.split("\n");
-    console.log([arr]);
+    console.log([arr[0]]);
     for(var i = 0; i < arr.length; i++){
         var arr1 = arr[i].split(",")
      //   console.log(arr1[1]);
