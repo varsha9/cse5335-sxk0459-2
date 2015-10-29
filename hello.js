@@ -9,19 +9,19 @@ fs.readFile('./CPH-T.csv', 'utf8', function (err,data) {
         return console.log(err);
     }
     console.log(data);
+    var arr = data.split("\n");
+    for(var i = 0; i < arr.length; i++){
+        var arr1 = arr[i].split(",")
+        console.log(arr1);
+    }
 });
 
 
 var query = client.query('CREATE TABLE csvtable (id SERIAL PRIMARY KEY, county VARCHAR(40) not null,city VARCHAR(40) not null,year1 VARCHAR(40) not null,year2 VARCHAR(40) not null,year3 VARCHAR(40) not null,status VARCHAR(40) not null )');
-// var query = client.query("INSERT INTO items(text, complete) values($1, $2)", [data.text, data.complete]);
+// var query = client.query("INSERT INTO items(text, complete) values($1, $2)", [i,a data.complete]);
 
 query.on('row', function(row) {
     results.push(row);
-});
-
-query.on('end', function() {
-    done();
-    return res.json(results);
 });
 
 
