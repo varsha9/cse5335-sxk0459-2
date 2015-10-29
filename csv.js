@@ -17,7 +17,7 @@ fs.readFile('./Customercomp.csv', 'utf8', function (err,data) {
 });
 
 
-var query = client.query('CREATE TABLE ccomplaint (id SERIAL PRIMARY KEY, date VARCHAR(40) ,issue VARCHAR(100),company VARCHAR(40) ,state VARCHAR(40) , zip VARCHAR(40) ,cid VARCHAR(40) not null )');
+var query = client.query('CREATE TABLE complaint (id SERIAL PRIMARY KEY, date VARCHAR(40) ,issue VARCHAR(100),company VARCHAR(40) ,state VARCHAR(40) , zip VARCHAR(40) ,cid VARCHAR(40) not null )');
 // var query = client.query("INSERT INTO items(text, complete) values($1, $2)", [i,a data.complete]);
 
 query.on('row', function(row) {
