@@ -8,17 +8,18 @@ fs.readFile('./Customercomp.csv', 'utf8', function (err,data) {
     if (err) {
         return console.log(err);
     }
-    console.log(data);
+
     var arr = data.split("\n");
     for(var i = 0; i < arr.length; i++){
         var arr1 = arr[i].split(",")
-        console.log(arr1);
+        console.log(arr1[1]);
+     //   var query = client.query("INSERT INTO complaint (date, issue, company, state, zip, cid) values($1, $2, $3, $4, $5, $6)", [i,arr1[1],arr1[2],arr1[3],arr1[4],arr1[5],arr1[6]]);
     }
 });
 
 
-var query = client.query('CREATE TABLE complaint (id SERIAL PRIMARY KEY, date VARCHAR(40) ,issue VARCHAR(100),company VARCHAR(40) ,state VARCHAR(40) , zip VARCHAR(40) ,cid VARCHAR(40) not null )');
-// var query = client.query("INSERT INTO items(text, complete) values($1, $2)", [i,a data.complete]);
+//var query = client.query('CREATE TABLE complaint (id SERIAL PRIMARY KEY, date VARCHAR(40) ,issue VARCHAR(100),company VARCHAR(40) ,state VARCHAR(40) , zip VARCHAR(40) ,cid VARCHAR(40) not null )');
+// var query = client.query("INSERT INTO complaint (date, issue, company, state, zip, cid) values($1, $2, $3, $4, $5, $6)", [i,arr1[1],arr1[2],arr1[3],arr1[4],arr1[5],arr1[6]]);
 
 query.on('row', function(row) {
     results.push(row);
