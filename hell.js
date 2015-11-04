@@ -18,7 +18,7 @@ pg.connect(connectionString, function(err, client, done) {
 
 //var query = client.query("SELECT * FROM datatabtwo");
 
-var query = client.query("SELECT cid FROM datatabtwo WHERE date='10/27/15'  ", function(err, results) {
+var query = client.query("SELECT date, issue, company, state, zip FROM datatabtwo WHERE cid ='1623089' ", function(err, results) {
     if (err) {
         throw err;
     }
@@ -29,6 +29,3 @@ query.on('end', function() {
 
     console.log("done");
 });
-
-
-
