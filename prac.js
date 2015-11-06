@@ -14,11 +14,12 @@ mongo.connect('mongodb://heroku_7gx3tn1n:pvc2onq548aes45ql6a9l6sbtn@ds045604.mon
 
     fs = require('fs');
     fs.readFile('./Date.json', 'utf8', function (err, data) {
+
         if (err) {
             return console.log(err);
         }
 
-    var arr =    JSON.parse(data);
+            var arr = JSON.parse(data);
 
 
 
@@ -28,7 +29,6 @@ mongo.connect('mongodb://heroku_7gx3tn1n:pvc2onq548aes45ql6a9l6sbtn@ds045604.mon
                     return console.log("Not connected");
                 }
 
-                // console.log(arr1);
             })
         }
     });
