@@ -9,9 +9,32 @@ fs = require('fs')
     if (err) {
         return console.log(err);
     }
+    // var arr = JSON.parse(data);
+    // console.log(client);
 
 
+     var arr = data.split("\n");
+     //  console.log([arr[0]]);
+     for(var i = 0; i < arr.length; i++) {
+         var arr1 = arr[i].split(",");
 
+      //   console.log(arr1[10]);
+
+         client.set("test","val", function(err) {
+             if (err) {
+                 // Something went wrong
+                 console.error("error");
+             } else {
+                 client.get("test", function(err, value) {
+                     if (err) {
+                         console.error("error");
+                     } else {
+                         console.log("Worked: " + value);
+                     }
+                 });
+             }
+         });
+     }
 
 });
 
