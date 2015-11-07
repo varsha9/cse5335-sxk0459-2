@@ -9,6 +9,15 @@ mongo.connect('mongodb://heroku_7gx3tn1n:pvc2onq548aes45ql6a9l6sbtn@ds045604.mon
 
     console.log("Connected");
 
+    var readline = require('readline');
+    var rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+
+});
+
+
+
     var findpeople = function (db, callback) {
         var cursor = db.collection('people').find({"Problem":"Incorrect information on credit report"});
 

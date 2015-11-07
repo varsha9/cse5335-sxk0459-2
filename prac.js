@@ -27,7 +27,13 @@ mongo.connect('mongodb://heroku_7gx3tn1n:pvc2onq548aes45ql6a9l6sbtn@ds045604.mon
             db.collection('people').insertOne(arr[i], function (err, result) {
                 if (err) {
                     return console.log("Not connected");
+
                 }
+                else{
+                    console.log(result);
+                }
+
+
 
             })
         }
