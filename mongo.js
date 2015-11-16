@@ -1,5 +1,6 @@
 var connect = require('connect'),
     mongo = require('mongodb');
+var prompt = require('prompt');
 var assert = require('assert');
 mongo.connect('mongodb://heroku_7gx3tn1n:pvc2onq548aes45ql6a9l6sbtn@ds045604.mongolab.com:45604/heroku_7gx3tn1n', {}, function(error, db) {
 
@@ -9,8 +10,10 @@ mongo.connect('mongodb://heroku_7gx3tn1n:pvc2onq548aes45ql6a9l6sbtn@ds045604.mon
 
     console.log("Connected");
 
+  //  db.collection('people').ensureIndex( { "ID": 1 }, { unique: true } );
+
     var findpeople = function (db, callback) {
-        var cursor = db.collection('people').find({"ID": 1627608});
+        var cursor = db.collection('people').find({"ID":1626940 });
 
         cursor.each(function (err, doc) {
             assert.equal(err, null);
