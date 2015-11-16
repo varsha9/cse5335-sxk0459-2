@@ -11,7 +11,7 @@ var fs = require("fs"),
 var toArray = require('stream-to-array');
 fs = require('fs');
 var arr;
-fs.readFile('./Date.json', 'utf8', function (err, data) {
+fs.readFile('./data.json', 'utf8', function (err, data) {
 
     if (err) {
         return console.log(err);
@@ -25,7 +25,9 @@ console.log(arr);
 for (i in arr){
 
     var record = arr[i];
+
     var key=record['State'];
+
     console.log('key '+key);
     var tempVal=[];
     for(j in record){
