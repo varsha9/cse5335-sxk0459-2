@@ -16,20 +16,22 @@ fs.readFile('./Date.json', 'utf8', function (err, data) {
     if (err) {
         return console.log(err);
     }
+
     arr=JSON.parse(data);
 
 
-});
 
 
 
+  // console.log(arr);
 
     for (i in arr){
+
 
     var record = arr[i];
     var key=record['ID'];
 
-    console.log('key' +key);
+   // console.log('key' +key);
 
     var tempVal=[];
     for(j in record){
@@ -48,6 +50,7 @@ fs.readFile('./Date.json', 'utf8', function (err, data) {
     } );
 }
 
+});
 
 client.hgetall(1623255, function(err,res){
 
