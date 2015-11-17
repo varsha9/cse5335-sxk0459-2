@@ -6,9 +6,13 @@
    The Heroku toolbelt commands followed to execute the script are as follows:
 
 > The commands i first used to push my code to Heroku are as follows with the command for heroku terminal as the last statement.
+
             - git add .
+
             - git commit -m"code pushed"
-            - git add .
+
+            - git push heroku master
+
             - heroku run bash
 
 > The commands and files i used for postgesql node.js are as follows:
@@ -57,12 +61,12 @@
             - node getall.js, node man.js
 
 #What aspect of the implementation did you find easy, if any, and why?
-    I found implementing Postgresql with Node.js really easy. It is easy because the Postgresql database on heroku
-clearly shows the number of tables and rows inserted and hence retrieval is very easy.
+>I found implementing Postgresql with Node.js really easy. It is easy because the Postgresql database on heroku
+>clearly shows the number of tables and rows inserted and hence retrieval is very easy.
 
 #What aspect of the implementation did you find hard, if any, and why?
-    I found implementing Redis with Node.js diffivult as its very confusing using key value pairs. Its always a
-confusion retrieving data with the required key.I feel redis is very complicated.
+>I found implementing Redis with Node.js diffivult as its very confusing using key value pairs. Its always a
+>confusion retrieving data with the required key.I feel redis is very complicated.
 
 
 
