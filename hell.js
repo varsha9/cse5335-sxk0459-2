@@ -18,7 +18,7 @@ pg.connect(connectionString, function(err, client, done) {
 
 //var query = client.qlmguery("SELECT * FROM datatabtwo");
 
-var query = client.query("SELECT  date FROM datatabtwo WHERE cid='1626264\r' ", function(err, results) {
+var query = client.query("SELECT  date,  issue, company, state, zip FROM final WHERE cid='1626264\r' ", function(err, results) {
     if (err) {
         throw err;
     }

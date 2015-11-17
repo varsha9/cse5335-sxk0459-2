@@ -13,18 +13,14 @@ var fs = require("fs"),
 var toArray = require('stream-to-array');
 fs = require('fs');
 var arr;
-fs.readFile('./data.json', 'utf8', function (err, data) {
+fs.readFile('./Date.json', 'utf8', function (err, data) {
 
     if (err) {
         return console.log(err);
     }
     arr=JSON.parse(data);
 
-// console.log(arr);
 
-
-
-// console.log(arr);
 for (i in arr){
 
     var record = arr[i];
@@ -43,7 +39,6 @@ for (i in arr){
         'date' : tempVal[0],
         'problem': tempVal[1],
         'company': tempVal[2],
-
         // 'state': tempVal[3],
 
         'zip': tempVal[4],
@@ -54,14 +49,13 @@ for (i in arr){
 
 });
 
-client.hgetall('CT', function(err,res){
 
-    var items=[];
-    console.log(res);
 
-    for(i in res){
-        items.push(res);
-    }
-    //  console.log(items);
+    client.hgetall('TX',(function (err, res) {
+        var items = [];
+        console.log(res);
+        for (i in res) {
+            items.push(res);
+        }
 
-});
+}));

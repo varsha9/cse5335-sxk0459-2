@@ -16,6 +16,9 @@ pg.connect(connectionString, function(err, client, done) {
     }
 });
 
+
+
+
 var properties = [
     {
         name: 'SelectedKey',
@@ -38,82 +41,66 @@ prompt.get(properties, function (err, result) {
     console.log('Value:' +result.Value);
 
 
-    if(result.SelectedKey = "Problem") {
-
-        console.log("Problem");
-
-        var query = client.query("SELECT  company, state FROM datatabtwo WHERE issue = '" + result.Value + "'", function (err, results) {
+    if(result.SelectedKey = "Zip") {
+        console.log("Zip");
+        var query = client.query("SELECT  company, state FROM final WHERE zip = '" + result.Value + "'", function (err, results) {
             if (err) {
                 throw err;
             }
             console.log(results.rows);
-
-
         });
-
         query.on('end', function () {
-
             console.log("done");
-
-
         })
     }
 
 
-
-
-
-  /*  else
-        if (result.SelectedKey = "Date") {
-            console.log("Date");
-            var query = client.query("SELECT issue, company, state FROM datatabtwo WHERE Date= '" + result.Value + "'", function (err, results) {
+    if (result.SelectedKey = "Date") {
+        console.log("Date");
+        var query = client.query("SELECT issue, company, state FROM final WHERE date= '" + result.Value + "'", function (err, results) {
                 if (err) {
                     throw err;
                 }
                 console.log(results.rows); // assumes 'results.rows' can be serialized to JSON
             });
-
-            query.on('end', function () {
-
-                console.log("done");
-
-            });
+        query.on('end', function () {
+            console.log("done");
+        });
         }
 
-        else if (result.SelectedKey = "ID") {
+         if (result.SelectedKey = "ID") {
             console.log("ID");
-            var query = client.query("SELECT issue, company, state FROM datatabtwo WHERE ID = '" + result.Value + "'", function (err, results) {
+
+
+            var query = client.query("SELECT Zip,date,issue, company, state FROM final WHERE cid = '" + result.Value + "\r'", function (err, results) {
                 if (err) {
                     throw err;
                 }
                 console.log(results.rows); // assumes 'results.rows' can be serialized to JSON
             });
-
-            query.on('end', function () {
-
-                console.log("done");
+             query.on('end', function () {
+                 console.log("done");
             });
 
         }
 
-        else if (result.SelectedKey = "Problem") {
+         if (result.SelectedKey = "Problem") {
             console.log("Problem");
-            var query = client.query("SELECT issue, company, state FROM datatabtwo WHERE Problem= '" + result.Value + "'", function (err, results) {
+            var query = client.query("SELECT issue, company, state FROM final WHERE issue = '" + result.Value + "'", function (err, results) {
                 if (err) {
                     throw err;
                 }
                 console.log(results.rows); // assumes 'results.rows' can be serialized to JSON
             });
-
-            query.on('end', function () {
-
-                console.log("done");
+             query.on('end', function () {
+                 console.log("done");
             });
         }
 
-        else if (result.SelectedKey = "Company") {
+
+         if (result.SelectedKey = "Company") {
             console.log("Company");
-            var query = client.query("SELECT issue, company, state FROM datatabtwo WHERE Company = '" + result.Value + "'", function (err, results) {
+            var query = client.query("SELECT issue, company, state FROM final WHERE Company = '" + result.Value + "'", function (err, results) {
                 if (err) {
                     throw err;
                 }
@@ -125,9 +112,9 @@ prompt.get(properties, function (err, result) {
                 console.log("done");
             });
         }
-        else if (result.SelectedKey = "State") {
+         if (result.SelectedKey = "State") {
             console.log("State");
-            var query = client.query("SELECT issue, company, state FROM datatabtwo WHERE State= '" + result.Value + "'", function (err, results) {
+            var query = client.query("SELECT issue, company, cid FROM final WHERE State= '" + result.Value + "'", function (err, results) {
                 if (err) {
                     throw err;
                 }
@@ -139,11 +126,12 @@ prompt.get(properties, function (err, result) {
                 console.log("done");
             });
         }
+
         else {
             console.log("Not Valid Input");
 
         }
-*/
+
 
     });
 
