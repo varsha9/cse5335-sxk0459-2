@@ -1,38 +1,70 @@
-# node-js-getting-started
+#What is your external data source used to populate your Heroku data sources?
+   The external data used to populate my data is through http://aws.amazon.com/datasets where i used the economics
+   section where it briefly describes the consumer complaints in a particular decade.
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+#What are the Heroku toolbelt commands to execute the scripts?
+   The Heroku toolbelt commands followed to execute the script are as follows:
 
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+> The commands i first used to push my code to Heroku are as follows with the command for heroku terminal as the last statement.
+            - git add .
+            - git commit -m"code pushed"
+            - git add .
+            - heroku run bash
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+> The commands and files i used for postgesql node.js are as follows:
 
-## Running Locally
+            The statement to populate Postgresql table on heroku is
+            - node csv.js
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+            The statement to retrieve data through Primary key on heroku is
 
-```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
-```
+            - node hell.js
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+            The statement to retrieve Data through Non Primary Key on heroku is
+            - node hello.js
 
-## Deploying to Heroku
+            The statement to retrieve both Primary and Non Primary Using User Interface through Prompt
+> NOTE: Whenever You Execute this, for the first selected key you need to choose from either of these values:
+> Zip, Date, ID, Problem, Company, State.
+> For the next value you can select any value in the JSON file under that particular selected key.
 
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
+            - node yes.js
 
-## Documentation
+> The commands and files used for MongoDb node.js are as follows:
 
-For more information about using Node.js on Heroku, see these Dev Center articles:
+            The statement to populate MongoDb with data is
+            - node prac.js
 
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+            The satement to retrieve data through primary key on heroku is
+            - node mongo.js
+
+            The statement to retrieve data through non primary key on heroku is
+            - node mo.js
+
+            The statement to retrieve Data through Uset Interface using Prompt is
+            - node mprompt.js
+
+> The commands and files used for Redis node.js are as follows:
+
+            The statements to poulate Redis with different Keys with vales are as follows:
+            - node i.js , node no.js,node not.js, node noth.js, node nof.js, node nofi.js
+
+            The statements to retrieve Data through Primary Key and prompt on heroku is
+            - node geta.js
+
+            The statement to retrieve Data through Non Primary Key on Heroku is
+            - node getall.js
+
+#What aspect of the implementation did you find easy, if any, and why?
+    I found implementing Postgresql with Node.js really easy. It is easy because the Postgresql database on heroku
+clearly shows the number of tables and rows inserted and hence retrieval is very easy.
+
+#What aspect of the implementation did you find hard, if any, and why?
+    I found implementing Redis with Node.js diffivult as its very confusing using key value pairs. Its always a
+confusion retrieving data with the required key.I feel redis is very complicated.
+
+
+
+
+
+
