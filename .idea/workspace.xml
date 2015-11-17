@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0a1e0f34-3970-41ea-a099-31d7d3c23cc8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mo.js" afterPath="$PROJECT_DIR$/mo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cse5335-sxk0459-2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +22,18 @@
     <favorites_list name="cse5335-sxk0459-2" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5367647">
+              <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -146,10 +155,7 @@
       <recent name="$PROJECT_DIR$/views" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.Getali.js">
-    <configuration default="false" name="mo.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="mo.js" working-dir="$PROJECT_DIR$">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Node.js.man.js">
     <configuration default="false" name="mp.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="mp.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
@@ -160,6 +166,9 @@
       <method />
     </configuration>
     <configuration default="false" name="Getali.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="Getali.js" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
+    <configuration default="false" name="man.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="man.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -205,19 +214,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Node.js.mprompt.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.mo.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.mp.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.getall.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.geta.js" />
-      <item index="5" class="java.lang.String" itemvalue="Node.js.Getali.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.mp.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.getall.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.geta.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.Getali.js" />
+      <item index="5" class="java.lang.String" itemvalue="Node.js.man.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.Getali.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.geta.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.getall.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.mp.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.mo.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.man.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.Getali.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.geta.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.getall.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.mp.js" />
       </list>
     </recent_temporary>
   </component>
@@ -560,13 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/man.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2867647">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hello.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3529412">
@@ -655,10 +657,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/man.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7352941">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5367647">
+          <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
           <folding />
         </state>
       </provider>

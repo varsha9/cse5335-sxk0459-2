@@ -53,7 +53,7 @@
             - node geta.js
 
             The statement to retrieve Data through Non Primary Key on Heroku is
-            - node getall.js
+            - node getall.js, node man.js
 
 #What aspect of the implementation did you find easy, if any, and why?
     I found implementing Postgresql with Node.js really easy. It is easy because the Postgresql database on heroku
