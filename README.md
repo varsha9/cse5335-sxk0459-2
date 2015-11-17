@@ -53,6 +53,7 @@
             - node geta.js
 
             The statement to retrieve Data through Non Primary Key on Heroku is
+            - npm install redis-scanstreams
             - node getall.js, node man.js
 
 #What aspect of the implementation did you find easy, if any, and why?
